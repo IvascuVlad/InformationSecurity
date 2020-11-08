@@ -1,2 +1,3 @@
 # InformationSecurity
  
+Nodul A joaca rol de server in arhitectura mea. Nodul KM (nod client) se conecteaza la nodul A de unde primeste modul de criptare CBC sau OFB si va trimite acestuia cheia K generata random cu litere si cifre criptata folosind AES cu modul de criptare primit de la A si cheia K'. Nodul B (nod client) se conecteaza si el la nodul A de unde va primi modul de criptare CBC sau OFB dupa care va raspunde pozitiv. Nodul A decripteaza cheia K cu AES folosind modul de criptare ales si K' iar apoi o va trimite nodului B care va raspunde pozitiv. Nodul A va trimite nodului B continutul fisierului criptat cu modul ales (CBC sau OFB) pe care acesta din urma il va decripta si afisa.
